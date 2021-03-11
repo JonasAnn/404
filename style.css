@@ -112,4 +112,11 @@ input{
         
     }
 
+    .form_box-text{
+        width: 80%;
+        margin: 0 auto 0;
+    }
+    .logo{
+        margin: 0 auto -30px;
+    }
 }
