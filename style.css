@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url("./imgs/bg-web.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 35px 0; */
+    height: 100vh;
+}
+.logo_box{
+    width: 33%;
+}
+.logo, .form_text, .instagram_image{
+    width: 100%;
+    object-fit: contain;
+}
+
+.form_box{
+    color: #ffffff;
+    width: 30%;
+    
+}
+.form_box-text{
+    width: 90%;
+    margin: 15px auto 0;
+}
+
+label{
+    display: block;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 11px;
+}
+input{
+    display: block;
+    margin: 8px auto 12px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 35px;
+    box-shadow: 2px 3px 8px 4px rgba(7, 0, 0, 0.404);
+}
+
+.btn{
+    margin: 25px auto 0;
+    display: block;
+    font-family: Montserrat;
+    padding: 12px 45px;
+    color: #ffffff;
+    font-size: 11px;
+    border: none;
+    background-color:#FF5A50;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px 4px rgba(7, 0, 0, 0.404);
+}
+.instagram{
+    margin: 15px auto;
+    width: 50%;
+}
+.instagram_link{
+    text-decoration: none;
+}
+
+.btn:focus, input:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: "Jupiter-Regular";
+    src: url("/fonts/JUPITER-BRUSH-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Jupiter-Solid";
+    src: url("/fonts/JUPITER-BRUSH-Solid.otf") format("opentype");
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        padding: 20px 0;
+        height: auto;
+    }
+    .logo_box{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .form_box{
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+
+}
